@@ -1,0 +1,40 @@
+{
+  "name": "eslint-plugin-log-filenames",
+  "version": "1.0.0",
+  "description": "ESLint plugin for logging the paths of all files being linted to the console",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha --reporter list test/"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "log",
+    "files",
+    "list",
+    "verbose"
+  ],
+  "author": "Lennart Pegel",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justlep/eslint-plugin-log-filenames.git"
+  },
+  "devDependencies": {
+    "eslint": "^3.0.0",
+    "mocha": "~5.0.5"
+  },
+  "peerDependencies": {
+    "eslint": ">=3"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "rules": {
+      "no-alert": 2
+    }
+  }
+}
