@@ -56,4 +56,21 @@ describe('eslint-plugin-log-files', function() {
         assert(out.includes('no-alert'));
     });
 
+    it('should NOT log linted files if eslint is run with --format=checkstyle CLI option', function() {
+        var err, out;
+        try {
+            out = execSync(cmd + ' --plugin log-filenames --format=checkstyle', {cwd: CWD});
+        } catch (e) {
+            err = e;
+        }
+
+        assert(!out);
+        out = err && err.stdout.toString();
+        assert.equal(typeof out, 'string');
+        assert(!out.includes(EXPECTED_LOG_PREFIX));
+        assert(out.includes('<?xml'));
+        assert(out.includes(VALID_FILE));
+        assert(out.includes(INVALID_FILE));
+        assert(out.includes('no-alert'));
+    });
 });
