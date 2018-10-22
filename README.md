@@ -1,4 +1,4 @@
-# eslint-plugin-log-filenames [![Build Status](https://travis-ci.org/justlep/eslint-plugin-log-filenames.svg?branch=master)](https://travis-ci.org/justlep/eslint-plugin-log-filenames)
+# eslint-plugin-log-filenames [![Build Status](https://travis-ci.org/justlep/eslint-plugin-log-filenames.svg?branch=master)](https://travis-ci.org/justlep/eslint-plugin-log-filenames) [![NPM Version][npm-image]][npm-url]
 ESLint plugin for logging the paths of all linted files to the console
 
 ## Why?
@@ -30,3 +30,7 @@ eslint --plugin log-filenames
 
 ### Important
 If ESLint is run with the `--format=checkstyle` CLI option (as IntelliJ's ESLint integration does), logging filenames is skipped in order to not produce invalid checkstyle XML in the console.
+
+
+[npm-image]: https://img.shields.io/npm/v/eslint-plugin-log-filenames.svg
+[npm-url]: https://npmjs.org/package/eslint-plugin-log-filenames
