@@ -22,7 +22,7 @@
     "url": "git+https://github.com/justlep/eslint-plugin-log-filenames.git"
   },
   "devDependencies": {
-    "eslint": "^3.0.0",
+    "eslint": "^4.18.2",
     "mocha": "~5.0.5"
   },
   "peerDependencies": {
