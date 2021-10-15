@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-log-filenames",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ESLint plugin for logging the paths of all files being linted to the console",
   "main": "lib/index.js",
   "scripts": {
