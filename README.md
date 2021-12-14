@@ -27,7 +27,7 @@ or via CLI
 eslint --plugin log-filenames
 ```
 
-Logged file types are `*.{js,jsx,es,es6,cjs,mjs,jsm,ts,html}`.  
+Logged file types are `*.{js,jsx,es,es6,cjs,mjs,jsm,ts,tsx,html}`.  
 If you need more exotic extensions, simply add an `overrides` section to your `.eslintrc`, 
 making the plugin log every file regardless of its extension:
 
