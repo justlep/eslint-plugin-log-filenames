@@ -10,15 +10,16 @@ By adding this plugin to an ESLint config, a list of all linted files will be ou
 ## How?
 Add the plugin to your project
 ```shell
-$ npm install --save eslint-plugin-log-filenames
+$ npm install -D eslint-plugin-log-filenames
 ```
 
-Then include it in your ESLint configuration (e.g .eslintrc)
+Then include it in your ESLint configuration (e.g `.eslintrc`)
 ```javascript
 {
   "plugins": [
     "log-filenames"
   ],
+  "rules": {...},
   ...
 }
 ```
