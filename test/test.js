@@ -48,6 +48,7 @@ describe('eslint-plugin-log-files', function() {
         assert(!out.includes(VALID_FILE));
         assert(out.includes(INVALID_FILE));
         assert(out.includes('no-alert'));
+        assert(out.includes(' potentially fixable with the `--fix` option')); // #4
     });
 
     it('if used, should list all files linted AND let eslint log files with linting errors additionally', function() {
@@ -65,6 +66,7 @@ describe('eslint-plugin-log-files', function() {
         assert(out.includes(EXPECTED_LOG_PREFIX + JSM_INVALID_FILE));
 
         assert(out.includes('no-alert'));
+        assert(out.includes(' potentially fixable with the `--fix` option')); // #4
     });
 
     it('should NOT log linted files if eslint is run with --format=checkstyle CLI option', function() {

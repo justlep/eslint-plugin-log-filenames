@@ -1,0 +1,53 @@
+{
+    "env": {
+        "browser": false,
+        "node": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2016
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+        "eqeqeq": 2,
+        "curly": [2, "all"],
+        "brace-style": [2, "1tbs", { "allowSingleLine": true }],
+        "comma-dangle": ["error", "never"],
+        "max-len": [2, {
+            "code": 145,
+            "ignoreComments": true,
+            "ignoreRegExpLiterals": true,
+            "ignoreTemplateLiterals": true,
+            "ignoreStrings": true
+        }],
+        "quotes": [2, "single"],
+        "no-mixed-spaces-and-tabs": [2],
+        "no-multi-assign": 2,
+        "no-whitespace-before-property": 2,
+        "no-alert": 2,
+        "no-eval": 2,
+        "no-trailing-spaces": 0,
+        "no-unused-expressions": 0,
+        "no-tabs": 2,
+        "no-console": 0,
+        "no-unused-vars": [2, {"vars": "local", "args": "none"}],
+        "no-else-return": 2,
+        "no-useless-catch": 0,
+        "space-unary-ops": [2, {"words": true, "nonwords": false}],
+        "linebreak-style": [0, "unix"],
+        "semi": [2, "always"],
+        "no-cond-assign": [2, "always"],
+        "no-lonely-if": 2,
+        "array-bracket-spacing": [2, "never"],
+        "camelcase": [2, {"properties": "always"}],
+        "object-curly-spacing": [2, "never"],
+        "eol-last": 0,
+        "no-path-concat": 2,
+        "radix": 2,
+        "wrap-iife": [2, "inside"],
+        "yoda": [2, "never"],
+        "no-implicit-globals": 2
+        // "indent": [2, 4]
+        // "no-param-reassign": 2
+    }
+}
